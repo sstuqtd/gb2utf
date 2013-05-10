@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path(File.dirname(__FILE__)) + '/../lib'
+
+require 'pp'
+require 'gb2utf'
+
+gu = Gb2utf.new
+gu.convert('UTF', 'GB', ARGV[1])
